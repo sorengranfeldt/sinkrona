@@ -1,2 +1,4 @@
-# sinkrona
-The Synchronization Engine Sinkrona
+# Sinkrona Synchronization Engine
+Sinkrona is a generic synchronization engine that imports, exports and aggregates data from connected systems via central repository [metaverse](https://github.com/sorengranfeldt/sinkrona/wiki/Metaverse). Many of the features and functionalities that you may know Microsoft Identity Manager Synchronization Service are available in Sinkrona. It implements a staging area for each connected system where objects and their data are synchronized to and from. The Sinkrona Core Service is responsible for managing the connections between all connected systems by using [System Connectors](https://github.com/sorengranfeldt/sinkrona/wiki/System-Connector). This Core service also fulfills the provisioning and de-provisioning requests in the connected systems. Sinkrona uses a NoSQL back-end database to store the data that it manages as well as its own configuration. The metaverse and the system staging spaces are located within this database.
+
+Sinkrona is built on .NET Core with NoSQL database underneath. This allows Sinkrona components to run on all platforms that support .NET Core. Also, Sinkrona is fully extensible allowing additional system connectors to be built and synchronization rules to be changed to control the functionality on the entire synchronization engine.
